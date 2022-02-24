@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body, * { font-family: 'Source Sans Pro'; }
+
+header { width: 100%; padding: 15px; background: #FFFFFF; }
+header h1 { display: flex; flex-direction: column; justify-content: center; align-content: center; width: 100%; }
+header h1 span { font-size: 24px; font-weight: 200; color: #1789C9; text-align: center; }
+header h1 img { display: block; width: 48px; height: auto; margin: 0 auto; }
+
+main { width: 100%; max-width: 1000px; padding: 0 15px; margin: 0 auto; }
+
+main #getRandom { display: block; width: 100%; max-width: 320px; margin: 0 auto; padding: 10px 20px; background: #F5F5F5; border: none; border-radius: 4px; outline: none; }
+main #getRandom figure { display: flex; flex-direction: row-reverse; flex-wrap: nowrap; justify-content: center; align-content: center; }
+main #getRandom figure img { display: inline-block; width: 24px; height: auto; }
+main #getRandom figure figcaption { font-weight: 600; font-size: 16px; color: #292B2C; text-transform: uppercase; padding: 0 15px 0 0; }
+
+main #crew { width: 100%; max-width: 1000px; padding: 50px 0; }
+
+main #crew h2 { width: 100%; border-bottom:  1px solid #99D6FF; }
+main #crew h2 figure { display: flex; flex-direction: row-reverse; flex-wrap: nowrap; justify-content: center; align-content: center; }
+main #crew h2 figure img { display: inline-block; width: 24px; height: auto; }
+main #crew h2 figure figcaption { font-weight: 400; font-size: 18px; color: #1789C9; text-transform: uppercase; padding: 0 15px 0 0; }
+
+main #crew #newStudent { display: flex; flex-direction: column; width: 100%; max-width: 1000px; padding: 10px; background: #F5F5F5; border-radius: 10px; margin: 15px 0; }
+main #crew #newStudent .formCell { display: flex; flex-direction: column; width: 100%; padding: 0 0 10px 0; }
+main #crew #newStudent .formCell:last-child { padding: 0; }
+main #crew #newStudent .formCell label { width: 100%; font-weight: 300; font-size: 16px; color: #292B2C; text-align: left; white-space: nowrap; }
+main #crew #newStudent .formCell label span.req { color: #D9534F; }
+main #crew #newStudent .formCell input[type="text"] { width: 100%; font-weight: 300; font-size: 16px; border: 1px solid #999999; border-radius: 4px; outline: none; }
+main #crew #newStudent .formCell.formButn { display: block; text-align: center; }
+main #crew #newStudent .formCell.formButn button { display: inline; font-weight: 300; font-size: 16px; border: 1px solid #999999; border-radius: 4px; outline: none; background: #F7F7F7; }
+main #crew #newStudent .formCell.formButn button figure { display: flex; flex-direction: row-reverse; flex-wrap: nowrap; justify-content: center; align-items: center; }
+main #crew #newStudent .formCell.formButn button figure img { display: inline-block; width: auto; height: 16px; }
+main #crew #newStudent .formCell.formButn button figure figcaption { font-weight: 400; font-size: 16px; color: #1789C9; text-transform: uppercase; padding: 0 15px 0 0; }
+
+main #crew #students { width: 100%; }
+main #crew #students .tableHeader { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: stretch; width: 100%; text-align: center; border-bottom: 1px solid #292B2C; background: #F7F7F7; }
+main #crew #students .tableHeader .headCell { display: flex; align-items: center; justify-items: center; text-align: center; padding: 10px; font-weight: 400; font-size: 16px; line-height: 16px; color: #292B2C; }
+main #crew #students .tableHeader .headCell span { display: block; width: 100%; text-align: center; }
+main #crew #students .tableHeader .headCell.headText { width: 20%; }
+main #crew #students .tableHeader .headCell.headFlex { width: 40%; }
+main #crew #students .tableHeader .headCell.headActs { width: 20%; }
+
+main #crew #students .member-row { width: 100%; text-align: center; border-bottom: 1px solid #78B9EB; background: #FFFFFF; }
+main #crew #students .member-row:nth-child(odd) { background: #F7F7F7; }
+main #crew #students .member-row .editStudent { position: relative; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: stretch; width: 100%; margin: 0; }
+main #crew #students .member-row .editStudent .member-cell { display: flex; align-items: center; justify-items: center; text-align: left; padding: 10px; font-weight: 400; font-size: 16px; line-height: 16px; color: #292B2C; }
+main #crew #students .member-row .editStudent .member-cell.member-valid { position: absolute; top: 0; right: 0; bottom: 0; display: none; -webkit-box-shadow: -5px 0 5px 0 rgba(0,0,0,.25); box-shadow: -5px 0 5px 0 rgba(0,0,0,.25); background: #F7F7F7; }
+main #crew #students .member-row .editStudent .member-cell.member-valid button { font-size: 16px; font-weight: 600; border: 1px solid #292B2C; border-radius: 4px; margin: 0 0 0 20px; padding: 4px 8px; }
+main #crew #students .member-row .editStudent .member-cell.member-valid button.validButton { color: #F7F7F7; background: #5CB85C; }
+main #crew #students .member-row .editStudent .member-cell.member-valid button.cancelButton { color: #D9534F; background: #F7F7F7; }
+main #crew #students .member-row .editStudent .member-cell.member-confirm { position: absolute; top: 0; right: 0; bottom: 0; display: none; -webkit-box-shadow: -5px 0 5px 0 rgba(0,0,0,.25); box-shadow: -5px 0 5px 0 rgba(0,0,0,.25); background: #F7F7F7; }
+main #crew #students .member-row .editStudent .member-cell.member-confirm button { font-size: 16px; font-weight: 600; border: 1px solid #292B2C; border-radius: 4px; margin: 0 0 0 20px; padding: 4px 8px; }
+main #crew #students .member-row .editStudent .member-cell.member-confirm button.confirmDelete { color: #F7F7F7; background: #D9534F; }
+main #crew #students .member-row .editStudent .member-cell.member-confirm button.cancelDelete { color: #292B2C; background: #F7F7F7; }
+main #crew #students .member-row .editStudent .member-cell.member-txt { width: 20%; }
+main #crew #students .member-row .editStudent .member-cell.member-txt input { display: none; width: 100%; font-weight: 300; font-size: 16px; border: 1px solid #999999; border-radius: 4px; outline: none; }
+main #crew #students .member-row .editStudent .member-cell.member-txt label { display: block; }
+main #crew #students .member-row .editStudent .member-cell.member-num { width: 40%; }
+main #crew #students .member-row .editStudent .member-cell.member-num span { width: 100%; text-align: center; }
+main #crew #students .member-row .editStudent .member-cell.member-action { display: flex; align-items: center; width: 10%; padding: 0; }
+main #crew #students .member-row .editStudent .member-cell.member-action button { width: 32px; height: 32px; padding: 0; margin: 0 auto; border: 0; outline: none; background: none; }
+main #crew #students .member-row .editStudent .member-cell.member-action button img { display: block; width: 24px; height: auto; margin: 0 auto; }
+
+main #crew #students .member-row .editStudent.active .member-cell.member-txt input[type="text"] { display: block; }
+main #crew #students .member-row .editStudent.active .member-cell.member-txt label { display: none; }
+main #crew #students .member-row .editStudent.active .member-cell.member-action { visibility: hidden; }
+main #crew #students .member-row .editStudent.active .member-cell.member-valid { display: flex; }
+
+main #crew #students .member-row .editStudent.deletion .member-cell.member-action { visibility: hidden; }
+main #crew #students .member-row .editStudent.deletion .member-cell.member-confirm { display: flex; }
+
+footer { margin-top: 2rem; text-align: center; color: #F7F7F7; background: #F76C6C; padding: 0.25rem 0; }
+
+main #talk h2 { width: 100%; border-bottom:  1px solid #99D6FF; }
+main #talk h2 figure { display: flex; flex-direction: row-reverse; flex-wrap: nowrap; justify-content: center; align-content: center; }
+main #talk h2 figure img { display: inline-block; width: 24px; height: auto; }
+main #talk h2 figure figcaption { font-weight: 400; font-size: 18px; color: #1789C9; text-transform: uppercase; padding: 0 15px 0 0; }
+
+main #talk #speakers { width: 100%; }
+main #talk #speakers .tableHeader { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: stretch; width: 100%; text-align: center; border-bottom: 1px solid #292B2C; background: #F7F7F7; }
+main #talk #speakers .tableHeader .headCell { display: flex; align-items: center; justify-items: center; text-align: center; padding: 10px; font-weight: 400; font-size: 16px; line-height: 16px; color: #292B2C; }
+main #talk #speakers .tableHeader .headCell span { display: block; width: 100%; text-align: center; }
+main #talk #speakers .tableHeader .headCell.headText { width: 20%; }
+main #talk #speakers .tableHeader .headCell.headText span { text-align: left; }
+main #talk #speakers .tableHeader .headCell.headDate { width: 40%; }
+main #talk #speakers .tableHeader .headCell.headTime { width: 20%; }
+
+main #talk #speakers .member-row { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: stretch; width: 100%; text-align: center; margin: 0; border-bottom: 1px solid #78B9EB; background: #FFFFFF; }
+main #talk #speakers .member-row:nth-child(odd) { background: #F7F7F7; }
+main #talk #speakers .member-row .member-cell { display: flex; align-items: center; justify-items: center; text-align: left; padding: 10px; font-weight: 400; font-size: 16px; line-height: 16px; color: #292B2C; }
+main #talk #speakers .member-row .member-cell.member-txt { width: 20%; }
+main #talk #speakers .member-row .member-cell.member-dat { width: 40%; }
+main #talk #speakers .member-row .member-cell.member-dat span { width: 100%; text-align: center; }
+main #talk #speakers .member-row .member-cell.member-tim { width: 20%; }
+main #talk #speakers .member-row .member-cell.member-tim span { width: 100%; text-align: center; }
+
+#chosenOne { position: fixed; top: 50%; left: 50%; display: none; width: 100%; max-width: 300px; padding: 20px 30px; border-radius: 8px; background: #292B2C; transform: translateX(-50%) translateY(-50%); transition: all 400ms linear; }
+#chosenOne span { display: block; width: 100%; font-size: 32px; font-weight: 800; color: #F7F7F7; text-align: center; }
+#chosenOne.show { display: block; }
+
+@media screen and (min-width: 576px) {
+
+  main #crew #newStudent { flex-direction: row; }
+  main #crew #newStudent .formCell { flex-direction: row; padding: 0 10px 0 0; }
+  main #crew #newStudent .formCell label { width: auto; padding: 0 10px 0 0; }
+
+  main #crew #students .tableHeader .headCell.headText span { text-align: left; }
+
+}
